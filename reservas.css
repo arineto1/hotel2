@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    border: solid 3px black;
+    width: 60vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4vh;
+    background-color: lightgray;
+}
+form > label{
+    font-size: 1.8rem;
+}
+form > input{
+    width: 60%;
+}
+form > #btn{
+    cursor: pointer;
+    height: 8vh;
+    border-radius: 10px;
+    font-size: 1.4rem;
+}
+form > #btn:hover{
+    background-color: lightgreen;
+}
+@media (width < 450px){
+    form{width: 100vw; height: 100vh;}
+    form > input{width: 80vw; height: 4vh;}
+    form > #btn{font-size:1.6rem; color: red;}
+}
+@media (width < 770px){
+    html{font-size: 20px}
+    form{width: 100vw; height: 100vh;}
+    form > input{width: 80vw; height: 4vh;}
+    form > #btn{font-size:1.6rem; color: red;}
+}
